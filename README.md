@@ -7,4 +7,3 @@ Features:
 - Scoring, which also improves with difficulty
 - Sound effects
 - No title nor game over screen
-- Use alt+F4 to quit game
