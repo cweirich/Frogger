@@ -14,12 +14,6 @@ public class FrogController : MonoBehaviour
     private bool jumped;
     private Vector2 startPosition = new Vector2(0, -ScreenBounds.vertical);
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -99,7 +93,7 @@ public class FrogController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Enemy")
+        if (other.CompareTag("Enemy"))
             Destroy(gameObject);
     }
 

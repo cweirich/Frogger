@@ -46,6 +46,11 @@ public class GameController : MonoBehaviour
             if (restartTimer <= 0f)
                 SceneManager.LoadScene("Main");
         }
+
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     void OnFrogMoved()
